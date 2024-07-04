@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": [
+        "Second life/src",
+        "Second life"
+    ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "Second life/lib/jfoenix-9.0.10.jar"
+    ]
+}

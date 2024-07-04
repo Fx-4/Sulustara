@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerLGSU">
+   <children>
+      <Pane fx:id="BGloginSU" prefHeight="1080.0" prefWidth="1920.0" />
+      <ImageView fx:id="BGgambar" fitHeight="810.0" fitWidth="1540.0" layoutX="250.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/signup.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="430.0" layoutY="258.0" prefHeight="575.0" prefWidth="1064.0" style="-fx-background-color: #FFECD0; -fx-background-radius: 50;" />
+      <Pane layoutX="624.0" layoutY="611.0" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #fe7d03; -fx-background-radius: 100;" />
+      <Pane layoutX="1190.0" layoutY="611.0" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #fe7d03; -fx-background-radius: 100;" />
+      <Text fill="#fe7d03" layoutX="596.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sulustara" wrappingWidth="169.1015625">
+         <font>
+            <Font name="Days Regular" size="32.0" />
+         </font>
+      </Text>
+      <Text layoutX="534.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selamat Bergabung!" wrappingWidth="302.13671875">
+         <font>
+            <Font name="Open Sans Regular" size="31.0" />
+         </font>
+      </Text>
+      <Text fill="#fe7d03" layoutX="1155.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sulustara" wrappingWidth="169.1015625">
+         <font>
+            <Font name="Days Regular" size="32.0" />
+         </font>
+      </Text>
+      <Text layoutX="1093.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selamat Bergabung!" wrappingWidth="302.13671875">
+         <font>
+            <Font name="Open Sans Regular" size="31.0" />
+         </font>
+      </Text>
+      <TextField fx:id="UNlg" layoutX="1103.0" layoutY="437.0" prefHeight="49.0" prefWidth="274.0" promptText="Username" style="-fx-background-color: transparant; -fx-border-radius: 50; -fx-border-color: #545454;" />
+      <PasswordField fx:id="passLG" layoutX="1103.0" layoutY="502.0" prefHeight="49.0" prefWidth="274.0" promptText="Password" style="-fx-background-color: transparant; -fx-border-radius: 50; -fx-border-color: #545454;" />
+      <Text fx:id="ButtonLG" fill="WHITE" layoutX="1168.0" layoutY="634.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MASUK" textAlignment="CENTER" wrappingWidth="139.72985839843773">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="609.0" layoutY="693.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Sudah punya akun?" />
+      <Text fx:id="txMasuk" layoutX="713.0" layoutY="693.0" onMouseClicked="#PindahMasuk" onMouseEntered="#WarnaMasukMasuk" onMouseExited="#WarnaMasukKeluar" strokeType="OUTSIDE" strokeWidth="0.0" text="Masuk" />
+      <TextField fx:id="UNsu" layoutX="530.0" layoutY="437.0" prefHeight="49.0" prefWidth="292.0" promptText="Username" style="-fx-background-color: transparant; -fx-border-color: #545454; -fx-border-radius: 50;" />
+      <PasswordField fx:id="passSU" layoutX="531.0" layoutY="503.0" prefHeight="49.0" prefWidth="291.0" promptText="Password" style="-fx-background-color: transparant; -fx-border-color: #545454; -fx-border-radius: 50;" />
+      <Text fx:id="ButtonSU" fill="WHITE" layoutX="620.0" layoutY="634.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DAFTAR" textAlignment="CENTER" wrappingWidth="109.283203125">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1289.0" layoutY="570.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Lupa password?" />
+      <Text layoutX="1191.0" layoutY="693.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Tidak punya akun?" />
+      <Text fx:id="txDaftar" layoutX="1291.0" layoutY="693.0" onMouseClicked="#PindahDaftar" onMouseEntered="#WarnaDaftarMasuk" onMouseExited="#WarnaDaftarKeluar" strokeType="OUTSIDE" strokeWidth="0.0" text="Daftar" />
+      <Rectangle fx:id="layerSembunyiDaftar" arcHeight="5.0" arcWidth="5.0" fill="#ffecd0" height="453.0" layoutX="509.0" layoutY="288.0" stroke="TRANSPARENT" strokeType="INSIDE" style="visibility: false;" width="337.0" />
+      <Rectangle fx:id="layerSembunyiMasuk" arcHeight="5.0" arcWidth="5.0" fill="#ffecd0" height="429.0" layoutX="1063.0" layoutY="270.0" stroke="TRANSPARENT" strokeType="INSIDE" style="visibility: false;" width="383.0" />
+      <Rectangle fx:id="layerPenutup" arcHeight="5.0" arcWidth="5.0" fill="#16606d" height="1080.0" layoutX="527.0" stroke="TRANSPARENT" strokeType="INSIDE" style="visibility: true; -fx-arc-height: 50; -fx-arc-width: 50;" width="411.0" />
+      <ImageView fx:id="logo" fitHeight="421.0" fitWidth="411.0" layoutX="526.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/SecondLife%20Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
