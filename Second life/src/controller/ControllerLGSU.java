@@ -34,7 +34,7 @@ public class ControllerLGSU {
 
     @FXML
     private Pane BGloginSU;
-
+l
     @FXML
     private Text ButtonLG;
 
