@@ -20,14 +20,14 @@
          <content>
             <AnchorPane maxHeight="1080.0" maxWidth="1920.0" prefHeight="1080.0" prefWidth="1920.0">
                <children>
-                  <VBox maxHeight="1080.0" maxWidth="1920.0" prefWidth="1920.0">
+                  <VBox fx:id="layout" maxHeight="1080.0" maxWidth="1920.0" prefWidth="1920.0">
                      <children>
                         <Label alignment="CENTER" contentDisplay="TOP" prefHeight="30.0" prefWidth="1557.0" style="-fx-font-size: 20px;" text="Iklan" />
                         <HBox fx:id="iklanContainer" maxWidth="1080.0" prefHeight="201.0" prefWidth="1920.0" spacing="1000.0">
                            <children>
                               <ImageView fx:id="iklan1" fitHeight="150" fitWidth="800.0">
                                  <image>
-                                    <Image url="@../Images/1.png" />
+                                    <Image url="@../Image/iklan/1.png" />
                                  </image>
                                  <HBox.margin>
                                     <Insets left="405.0" />
@@ -35,7 +35,7 @@
                               </ImageView>
                               <ImageView fx:id="iklan2" fitHeight="150" fitWidth="800">
                                  <image>
-                                    <Image url="@../Images/2.png" />
+                                    <Image url="@../Image/iklan/2.png" />
                                  </image>
                                  <HBox.margin>
                                     <Insets left="405.0" />
@@ -43,7 +43,7 @@
                               </ImageView>
                               <ImageView fx:id="iklan3" fitHeight="150" fitWidth="800">
                                  <image>
-                                    <Image url="@../Images/3.png" />
+                                    <Image url="@../Image/iklan/3.png" />
                                  </image>
                                  <HBox.margin>
                                     <Insets left="405.0" />
@@ -51,7 +51,7 @@
                               </ImageView>
                               <ImageView fx:id="iklan4" fitHeight="150" fitWidth="800">
                                  <image>
-                                    <Image url="@../Images/4.png" />
+                                    <Image url="@../Image/iklan/4.png" />
                                  </image>
                                  <HBox.margin>
                                     <Insets left="405.0" />
@@ -59,7 +59,7 @@
                               </ImageView>
                               <ImageView fx:id="iklan5" fitHeight="150" fitWidth="800">
                                  <image>
-                                    <Image url="@../Images/5.png" />
+                                    <Image url="@../Image/iklan/5.png" />
                                  </image>
                                  <HBox.margin>
                                     <Insets left="405.0" />
@@ -93,7 +93,7 @@
                                        <children>
                                           <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../MenuUtama/Image/p1.png" />
+                                                <Image url="@../Image/produk/p1.png" />
                                              </image>
                                              <VBox.margin>
                                                 <Insets />
@@ -124,7 +124,7 @@
                                        <children>
                                           <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../MenuUtama/Image/p2.png" />
+                                                <Image url="@../Image/produk/p2.png" />
                                              </image>
                                           </ImageView>
                                           <Label text="Dapur">
@@ -151,7 +151,7 @@
                                        <children>
                                           <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../MenuUtama/Image/p3.png" />
+                                                <Image url="@../Image/produk/p3.png" />
                                              </image>
                                           </ImageView>
                                           <Label text="Dapur">
@@ -181,7 +181,7 @@
                                        <children>
                                           <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../MenuUtama/Image/p4.png" />
+                                                <Image url="@../Image/produk/p4.png" />
                                              </image>
                                           </ImageView>
                                           <Label text="Dapur">
@@ -205,7 +205,7 @@
                                        <children>
                                           <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../MenuUtama/Image/p5.png" />
+                                                <Image url="@../Image/produk/p5.png" />
                                              </image>
                                           </ImageView>
                                           <Label text="Dapur">
@@ -229,7 +229,7 @@
                                        <children>
                                           <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../MenuUtama/Image/p1.png" />
+                                                <Image url="@../Image/produk/p1.png" />
                                              </image>
                                           </ImageView>
                                           <Label text="Dapur">
@@ -253,7 +253,7 @@
                                        <children>
                                           <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../MenuUtama/Image/p3.png" />
+                                                <Image url="@../Image/produk/p3.png" />
                                              </image>
                                           </ImageView>
                                           <Label text="Dapur">
@@ -277,7 +277,7 @@
                                        <children>
                                           <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../MenuUtama/Image/p4.png" />
+                                                <Image url="@../Image/produk/p4.png" />
                                              </image>
                                           </ImageView>
                                           <Label text="Dapur">
@@ -301,7 +301,7 @@
                                        <children>
                                           <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../MenuUtama/Image/p5.png" />
+                                                <Image url="@../Image/produk/p5.png" />
                                              </image>
                                           </ImageView>
                                           <Label text="Dapur">
@@ -325,7 +325,7 @@
                                        <children>
                                           <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../MenuUtama/Image/p2.png" />
+                                                <Image url="@../Image/produk/p2.png" />
                                              </image>
                                           </ImageView>
                                           <Label text="Dapur">
@@ -349,7 +349,7 @@
                                        <children>
                                           <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../MenuUtama/Image/p3.png" />
+                                                <Image url="@../Image/produk/p3.png" />
                                              </image>
                                           </ImageView>
                                           <Label text="Dapur">
@@ -373,7 +373,7 @@
                                        <children>
                                           <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../../MenuUtama/Image/p5.png" />
+                                                <Image url="@../Image/produk/p5.png" />
                                              </image>
                                           </ImageView>
                                           <Label text="Dapur">

@@ -1,18 +1,24 @@
 package controller;
 
+import java.io.IOException;
+
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 import javafx.util.Duration;
 
 public class MenuUtamaController {
 
     @FXML
+    private VBox layout;
+    @FXML
     private HBox iklanContainer;
-
+    
     @FXML
     private ImageView iklan1;
     @FXML
@@ -37,6 +43,25 @@ public class MenuUtamaController {
 
     @FXML
     public void initialize() {
+
+        try{
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/view/Navbar.fxml"));
+            VBox Base = loader.load();
+            ControllerNavbar controllerNavbar = loader.getController();
+
+
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+
+
+
+
+
+
         // Load advertisement images
         try {
             iklan1.setImage(new Image(getClass().getResourceAsStream("/Images/1.png")));
