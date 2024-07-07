@@ -5,6 +5,7 @@
     ],
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "Second life/lib/jfoenix-9.0.10.jar"
+        "Second life/lib/jfoenix-9.0.10.jar",
+        "Second life/lib/sqlite-jdbc-3.42.0.0.jar"
     ]
 }

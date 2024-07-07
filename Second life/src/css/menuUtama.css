@@ -1,0 +1,17 @@
+/* CSS untuk scroll pane transparan */
+.scroll-pane {
+    -fx-overflow: auto;
+    -fx-background-color: transparent;
+    -fx-border: none;
+
+}
+.scroll-pane {
+    -fx-background-color: transparent; /* Hide the scrollbar background */
+    -fx-background-insets: 0; /* Remove padding around the scrollbar */
+    -fx-padding: 0; /* Remove padding inside the scroll pane */
+    -fx-hbar-policy: never; /* Hide horizontal scrollbar */
+    -fx-vbar-policy: never; /* Hide vertical scrollbar */
+}
+
+
+/* CSS untuk vbox dengan border dan drop shadow *
