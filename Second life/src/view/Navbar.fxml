@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Rectangle?>
@@ -14,6 +22,417 @@
 
 <AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: transparant;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerNavbar">
    <children>
+      <BorderPane fx:id="paneUtama" layoutX="-2.0" layoutY="66.0" prefHeight="1011.0" prefWidth="1920.0">
+         <bottom>
+            <ScrollPane prefHeight="1014.0" prefWidth="1904.0" BorderPane.alignment="CENTER">
+               <content>
+                  <AnchorPane maxHeight="1080.0" maxWidth="1920.0" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #FFECD0;">
+                     <children>
+                        <VBox fx:id="layout" maxHeight="1080.0" maxWidth="1920.0" prefWidth="1920.0" style="-fx-background-color: FFECD0;">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="TOP" prefHeight="34.0" prefWidth="1557.0" style="-fx-font-size: 20px;" text="Iklan" />
+                              <HBox fx:id="iklanContainer" maxWidth="1080.0" prefHeight="201.0" prefWidth="1920.0" spacing="1000.0">
+                                 <children>
+                                    <ImageView fx:id="iklan1" fitHeight="178.0" fitWidth="1051.0">
+                                       <image>
+                                          <Image url="@../Image/iklan/1.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="243.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <ImageView fx:id="iklan2" fitHeight="150" fitWidth="800">
+                                       <image>
+                                          <Image url="@../Image/iklan/2.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="405.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <ImageView fx:id="iklan3" fitHeight="150" fitWidth="800">
+                                       <image>
+                                          <Image url="@../Image/iklan/3.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="405.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <ImageView fx:id="iklan4" fitHeight="150" fitWidth="800">
+                                       <image>
+                                          <Image url="@../Image/iklan/4.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="405.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <ImageView fx:id="iklan5" fitHeight="150" fitWidth="800">
+                                       <image>
+                                          <Image url="@../Image/iklan/5.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="405.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <Label alignment="TOP_CENTER" contentDisplay="TOP" prefHeight="30.0" prefWidth="1557.0" style="-fx-font-size: 20px;" text="Rekomendasi" />
+                              <ScrollPane hbarPolicy="ALWAYS" prefHeight="615.0" prefWidth="1920.0" style="-fx-background-color: transparant;">
+                                 <content>
+                                    <GridPane fx:id="gridpane1" prefWidth="1051.0" style="-fx-background-color: FFECD0;" stylesheets="@../../../MenuUtama/View/MenuUtama/CSS/menuUtama.css">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="245.0" minHeight="10.0" prefHeight="245.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="50.0" minHeight="0.0" prefHeight="245.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="245.0" minHeight="10.0" prefHeight="245.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="24235.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="245.0" minHeight="10.0" prefHeight="245.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <VBox prefHeight="200.0" prefWidth="100.0" spacing="12.0" GridPane.columnIndex="4">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Image/produk/p1.png" />
+                                                   </image>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </ImageView>
+                                                <Label text="Dapur">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Rp. 20.000">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Yogyakarta">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="11.0" />
+                                                   </font>
+                                                </Label>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" />
+                                             </children>
+                                             <GridPane.margin>
+                                                <Insets />
+                                             </GridPane.margin>
+                                          </VBox>
+                                          <VBox prefHeight="200.0" prefWidth="100.0" spacing="12.0" GridPane.columnIndex="6">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Image/produk/p2.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label text="Dapur">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Rp. 20.000">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Yogyakarta">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="11.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <GridPane.margin>
+                                                <Insets />
+                                             </GridPane.margin>
+                                          </VBox>
+                                          <VBox prefHeight="200.0" prefWidth="100.0" spacing="12.0" GridPane.columnIndex="2">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Image/produk/p3.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label text="Dapur">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Rp. 20.000">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Yogyakarta">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="11.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <GridPane.margin>
+                                                <Insets />
+                                             </GridPane.margin>
+                                          </VBox>
+                                          <VBox prefHeight="200.0" prefWidth="100.0" spacing="12.0">
+                                             <GridPane.margin>
+                                                <Insets />
+                                             </GridPane.margin>
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Image/produk/p4.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label text="Dapur">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Rp. 20.000">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Yogyakarta">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="11.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="200.0" prefWidth="100.0" spacing="12.0" GridPane.rowIndex="2">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Image/produk/p5.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label text="Dapur">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Rp. 20.000">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Yogyakarta">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="11.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="200.0" prefWidth="100.0" spacing="12.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Image/produk/p1.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label text="Dapur">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Rp. 20.000">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Yogyakarta">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="11.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="200.0" prefWidth="100.0" spacing="12.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Image/produk/p3.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label text="Dapur">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Rp. 20.000">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Yogyakarta">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="11.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="200.0" prefWidth="100.0" spacing="12.0" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Image/produk/p4.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label text="Dapur">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Rp. 20.000">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Yogyakarta">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="11.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="200.0" prefWidth="100.0" spacing="12.0" GridPane.rowIndex="4">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Image/produk/p5.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label text="Dapur">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Rp. 20.000">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Yogyakarta">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="11.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="200.0" prefWidth="100.0" spacing="12.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Image/produk/p2.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label text="Dapur">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Rp. 20.000">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Yogyakarta">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="11.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="200.0" prefWidth="100.0" spacing="12.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Image/produk/p3.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label text="Dapur">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Rp. 20.000">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Yogyakarta">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="11.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="200.0" prefWidth="100.0" spacing="12.0" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Image/produk/p5.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label text="Dapur">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Rp. 20.000">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Yogyakarta">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="11.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </GridPane>
+                                 </content>
+                                 <VBox.margin>
+                                    <Insets left="243.0" />
+                                 </VBox.margin>
+                                 <stylesheets>
+                                    <URL value="@../CSS/menuUtama.css" />
+                                    <URL value="@../css/menuUtama.css" />
+                                    <URL value="@../css/menuUtama.css" />
+                                 </stylesheets>
+                              </ScrollPane>
+                           </children>
+                        </VBox>
+                        <Pane layoutX="1294.0" layoutY="258.0" prefHeight="657.0" prefWidth="630.0" style="-fx-background-color: #FFECD0;" />
+                     </children>
+                  </AnchorPane>
+               </content>
+               <stylesheets>
+                  <URL value="@../CSS/menuUtama.css" />
+                  <URL value="@../css/menuUtama.css" />
+               </stylesheets>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </ScrollPane>
+         </bottom></BorderPane>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#15616d" height="66.0" stroke="BLACK" strokeType="INSIDE" width="1920.0" />
       <Rectangle fx:id="layerPenutup" arcHeight="5.0" arcWidth="5.0" height="1012.0" layoutX="-2.0" layoutY="65.0" opacity="0.1" stroke="BLACK" strokeType="INSIDE" style="visibility: false;" width="1922.0" />
       <Pane fx:id="kategoriPane" layoutX="207.0" layoutY="1.0" onMouseExited="#KategoriKeluar" prefHeight="298.0" prefWidth="92.0" style="visibility: false;">
@@ -85,6 +504,11 @@
             </Pane>
          </children>
       </Pane>
+      <ImageView fitHeight="25.0" fitWidth="200.0" layoutX="1324.0" layoutY="18.0" onMouseClicked="#MenuKeranjang" onMouseEntered="#KeranjangMuncul" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/navbar/Keranjang.png" />
+         </image>
+      </ImageView>
       <Pane fx:id="keranjangPane" layoutX="1322.0" layoutY="1.0" onMouseExited="#KeranjangKeluar" prefHeight="291.0" prefWidth="29.0" style="visibility: false;">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="228.0" layoutX="-144.0" layoutY="65.0" stroke="BLACK" strokeType="INSIDE" width="306.0" />
@@ -143,7 +567,7 @@
             <Image url="@../Image/navbar/User.png" />
          </image>
       </ImageView>
-      <Text fill="#ffecd0" layoutX="1809.0" layoutY="38.0" onMouseClicked="#MenuProfile" strokeType="OUTSIDE" strokeWidth="0.0" text="HAIKAL" wrappingWidth="98.9368896484375">
+      <Text fx:id="USNM" fill="#ffecd0" layoutX="1809.0" layoutY="38.0" onMouseClicked="#MenuProfile" strokeType="OUTSIDE" strokeWidth="0.0" text="HAIKAL" wrappingWidth="98.9368896484375">
          <font>
             <Font name="Arial Rounded MT Bold" size="18.0" />
          </font>
@@ -163,21 +587,16 @@
             <Font name="Arial Rounded MT Bold" size="18.0" />
          </font>
       </Text>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutX="308.0" layoutY="8.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 50;" width="867.0" />
-      <Circle fill="#fe7d03" layoutX="332.0" layoutY="33.0" radius="18.0" stroke="#15616d" strokeType="INSIDE" strokeWidth="2.0" />
-      <TextField layoutX="346.0" layoutY="12.0" prefHeight="40.0" prefWidth="807.0" promptText="Cari di SecondLife" style="-fx-background-color: Transparent;">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutX="394.0" layoutY="8.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 50;" width="819.0" />
+      <TextField layoutX="433.0" layoutY="12.0" prefHeight="40.0" prefWidth="760.0" promptText="Cari di SecondLife" style="-fx-background-color: Transparent;">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <ImageView fitHeight="25.0" fitWidth="15.0" layoutX="324.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+      <Circle fill="#fe7d03" layoutX="416.0" layoutY="33.0" radius="18.0" stroke="#15616d" strokeType="INSIDE" strokeWidth="2.0" />
+      <ImageView fitHeight="25.0" fitWidth="15.0" layoutX="408.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Image/navbar/search%20(1).png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="25.0" fitWidth="200.0" layoutX="1324.0" layoutY="18.0" onMouseClicked="#MenuKeranjang" onMouseEntered="#KeranjangMuncul" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Image/navbar/Keranjang.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="25.0" fitWidth="200.0" layoutX="1446.0" layoutY="20.0" onMouseEntered="#MailMuncul" pickOnBounds="true" preserveRatio="true">
@@ -197,6 +616,5 @@
       <Rectangle fx:id="area5" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="66.0" layoutX="1423.0" stroke="TRANSPARENT" strokeType="INSIDE" style="visibility: false;" width="189.0" />
       <Rectangle fx:id="area6" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="68.0" layoutX="1492.0" stroke="TRANSPARENT" strokeType="INSIDE" style="visibility: false;" width="262.0" />
       <Rectangle fx:id="area7" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="68.0" layoutX="1738.0" layoutY="1.0" stroke="TRANSPARENT" strokeType="INSIDE" style="visibility: false;" width="182.0" />
-      <BorderPane fx:id="paneUtama" layoutX="-2.0" layoutY="66.0" prefHeight="1011.0" prefWidth="1920.0" style="-fx-background-color: #FFFBF5;" />
    </children>
 </AnchorPane>
