@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" styleClass="Background" stylesheets="@StyleSheets/ProfilePageStyleSheet.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ProfilePageController">
+   <children>
+      <Pane prefHeight="800.0" prefWidth="538.0" style="-fx-background-color: #16606D;" styleClass="SideView" stylesheets="@StyleSheets/ProfilePageStyleSheet.css">
+         <children>
+            <Pane layoutX="77.0" layoutY="158.0" prefHeight="485.0" prefWidth="385.0" styleClass="PhotoCard">
+               <children>
+                  <ImageView fx:id="ProfileImage" fitHeight="325.0" fitWidth="325.0" layoutX="30.0" layoutY="32.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../ImageAsset/ProfileImageBlank.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="PilihGambar" layoutX="30.0" layoutY="396.0" mnemonicParsing="false" onMouseClicked="#PilihGambarFile" prefHeight="60.0" prefWidth="325.0" styleClass="PhotoButton" text="Pilih Gambar">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="77.0" layoutY="106.0" prefHeight="41.0" prefWidth="171.0" styleClass="TextBackPane">
+               <children>
+                  <Label layoutX="13.0" layoutY="8.0" text="ID">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="DetailID" alignment="CENTER" layoutX="56.0" layoutY="8.0" prefHeight="23.0" prefWidth="100.0" text="0000001">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="14.0" onMouseClicked="#Back" prefHeight="35.0" prefWidth="85.0" spacing="5.0">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ImageAsset/Icon/Vector%20back%20icon.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="38.0" prefWidth="44.0" text="Back" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children></Pane>
+      <Pane layoutX="538.0" prefHeight="800.0" prefWidth="743.0" style="-fx-background-color: #FFECD0;">
+         <children>
+            <Pane layoutX="10.0" layoutY="135.0" prefHeight="54.0" prefWidth="724.0" styleClass="TextBackPane">
+               <children>
+                  <Label layoutX="24.0" layoutY="16.0" text="Nama">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Nama" layoutX="280.0" layoutY="16.0" text="Admin123">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="10.0" layoutY="629.0" prefHeight="135.0" prefWidth="724.0" styleClass="TextBackPane">
+               <children>
+                  <Label fx:id="AlamatLandMark" layoutX="14.0" layoutY="12.0" text="Alamat">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Alamat" alignment="TOP_LEFT" layoutX="14.0" layoutY="46.0" prefHeight="54.0" prefWidth="691.0" text="Admin123" wrapText="true">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="UbahAlamat" layoutX="549.0" layoutY="95.0" mnemonicParsing="false" onMouseClicked="#UbahAlamatClick" prefWidth="102.0" styleClass="UbahButton" text="Ubah" textFill="#6b5ca8">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Line endX="240.20001220703125" endY="2.0" layoutX="101.0" layoutY="40.0" startX="-87.0" startY="2.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="9.0" layoutY="438.0" prefHeight="54.0" prefWidth="724.0" styleClass="TextBackPane">
+               <children>
+                  <Label layoutX="24.0" layoutY="16.0" text="Nomor">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Nomor" layoutX="280.0" layoutY="16.0" text="Admin123">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="UbahNomor" layoutX="550.0" layoutY="8.0" mnemonicParsing="false" onMouseClicked="#UbahNomorClick" prefWidth="102.0" styleClass="UbahButton" text="Ubah" textFill="#6b5ca8">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="9.0" layoutY="515.0" prefHeight="54.0" prefWidth="724.0" styleClass="TextBackPane">
+               <children>
+                  <Label layoutX="24.0" layoutY="16.0" text="Email">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Email" layoutX="280.0" layoutY="16.0" text="Admin123">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="UbahEmail" layoutX="550.0" layoutY="8.0" mnemonicParsing="false" onMouseClicked="#UbahEmailClick" prefWidth="102.0" styleClass="UbahButton" text="Ubah" textFill="#6b5ca8">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="10.0" layoutY="212.0" prefHeight="54.0" prefWidth="724.0" styleClass="TextBackPane">
+               <children>
+                  <Label layoutX="24.0" layoutY="16.0" text="Username">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Username" layoutX="280.0" layoutY="16.0" text="Admin123">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="UbahUsername" layoutX="550.0" layoutY="8.0" mnemonicParsing="false" onMouseClicked="#UbahUsernameClick" prefWidth="102.0" styleClass="UbahButton" text="Ubah" textFill="#6b5ca8">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="10.0" layoutY="366.0" prefHeight="54.0" prefWidth="724.0" styleClass="TextBackPane">
+               <children>
+                  <Label layoutX="24.0" layoutY="16.0" text="Jenis Kelamin">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="JenisKelamin" layoutX="280.0" layoutY="16.0" text="Admin123">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="UbahJenisKelamin" layoutX="550.0" layoutY="8.0" mnemonicParsing="false" onMouseClicked="#UbahKelaminClick" prefWidth="102.0" styleClass="UbahButton" text="Ubah" textFill="#6b5ca8">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="10.0" layoutY="289.0" prefHeight="54.0" prefWidth="724.0" styleClass="TextBackPane">
+               <children>
+                  <Label layoutX="24.0" layoutY="16.0" text="Tanggal lahir">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="TanggalLahir" layoutX="280.0" layoutY="16.0" text="Admin123">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="UbahTanggalLahir" layoutX="550.0" layoutY="8.0" mnemonicParsing="false" onMouseClicked="#UbahTanggalLahirClick" prefWidth="102.0" styleClass="UbahButton" text="Ubah" textFill="#6b5ca8">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Label layoutX="14.0" layoutY="79.0" text="Biodata Diri">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="577.0" text="Alamat">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="OverlayBackground" layoutY="-800.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" styleClass="OverlayBackgroud" stylesheets="@StyleSheets/ChangeStyleSheet.css" />
+      <Pane fx:id="Overlay" layoutX="320.0" layoutY="-180.0" prefHeight="180.0" prefWidth="640.0">
+         <children>
+            <Pane fx:id="CardChange" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="640.0" styleClass="CardBackground" stylesheets="@StyleSheets/ChangeStyleSheet.css">
+               <children>
+                  <TextField fx:id="Replacement" layoutX="30.0" layoutY="70.0" prefHeight="40.0" prefWidth="580.0" promptText="TextHere" styleClass="Field">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                  </TextField>
+                  <Label fx:id="UbahSubject" layoutX="30.0" layoutY="47.0" text="PlaceHolder">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="Batal" layoutX="510.0" layoutY="131.0" mnemonicParsing="false" onMouseClicked="#BatalClick" prefHeight="35.0" prefWidth="100.0" styleClass="CancelButton" text="Batal">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Ubah" layoutX="405.0" layoutY="131.0" mnemonicParsing="false" onMouseClicked="#UbahClick" prefHeight="35.0" prefWidth="100.0" styleClass="ConfirmButton" text="Ubah" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Button>
+                  <ChoiceBox fx:id="PilihKelamin" layoutX="30.0" layoutY="71.0" prefHeight="35.0" prefWidth="580.0" styleClass="seletor" />
+                  <DatePicker fx:id="PilihTanggal" layoutX="30.0" layoutY="71.0" prefHeight="39.0" prefWidth="580.0" styleClass="seletor" />
+                  <Label fx:id="NotifGeneral" layoutX="30.0" layoutY="141.0" style="-fx-opacity: 0.0;" text="Form kosong! Harap diisi terlebih dahulu" textFill="#6b5ca8">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="CardChange1" layoutX="116.0" layoutY="-700.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1054.0" styleClass="CardBackground" stylesheets="@StyleSheets/ChangeStyleSheet.css">
+         <children>
+            <TextField fx:id="AlamatField" layoutX="14.0" layoutY="475.0" prefHeight="40.0" prefWidth="538.0" promptText="TextHere" styleClass="Field">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="14.0" layoutY="452.0" text="Alamat Utama">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="BatalAlamat" layoutX="911.0" layoutY="634.0" mnemonicParsing="false" onMouseClicked="#BatalAlamatClickAdv" prefHeight="35.0" prefWidth="100.0" styleClass="CancelButton" text="Batal">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="UbahAlamatAdvance" layoutX="806.0" layoutY="634.0" mnemonicParsing="false" onMouseClicked="#UbahAlamatClickAdv" prefHeight="35.0" prefWidth="100.0" styleClass="ConfirmButton" text="Ubah" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <Pane layoutX="7.0" layoutY="8.0" style="-fx-border-color: #000000;">
+               <children>
+                  <WebView fx:id="Map" layoutX="4.0" layoutY="4.0" prefHeight="425.0" prefWidth="1034.0" />
+               </children>
+               <padding>
+                  <Insets right="2.0" top="2.0" />
+               </padding>
+            </Pane>
+            <TextArea fx:id="AlamatAdvance" layoutX="14.0" layoutY="557.0" prefHeight="112.0" prefWidth="538.0" promptText="Alamat Lebih Detail" wrapText="true">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font></TextArea>
+            <Label layoutX="14.0" layoutY="526.0" text="Alamat Lebih Detail">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="669.0" prefHeight="18.0" prefWidth="662.0" text="gunakan google maps diatas untuk mempermudah anda dalam menulis alamat atau lokasi anda agar proses jual-beli lancar" wrapText="true">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="UbahNama" layoutX="1298.0" layoutY="-109.0" mnemonicParsing="false" onMouseClicked="#UbahNamaClick" prefWidth="102.0" styleClass="UbahButton" text="Ubah" textFill="#6b5ca8">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

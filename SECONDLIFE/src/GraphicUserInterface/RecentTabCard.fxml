@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="284.0" prefWidth="1158.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RecentTabCardController">
+   <children>
+      <Label prefHeight="17.0" prefWidth="209.0" text="Baru Saja Masuk">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <ScrollPane prefHeight="259.0" prefWidth="1158.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="240.0" prefWidth="3313.0">
+               <children>
+                  <HBox fx:id="HboxContainer" layoutY="-2.0" prefHeight="275.0" prefWidth="1157.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</VBox>
